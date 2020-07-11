@@ -8,6 +8,14 @@
   margin: 0 auto;
 }
 
+
+.header{
+  display:block;
+  margin-left:auto;
+  margin-right: auto;
+  margin-bottom: 10%;
+  width:100%;
+}
 /*
 // --------------------------------------------------
 // SearchBar STYLES
@@ -36,7 +44,7 @@
   font-weight: 600;
   padding: 2rem 2.5rem;
   color: #fff;
-  background: #3B3B98;
+  background: #983b3b;
 }
 
 @media (min-width: 768px) {
@@ -76,8 +84,8 @@
 }
 
 .search-type-controls input[type="radio"]:checked + span {
-  color: #3B3B98;
-  border-bottom-color: #3B3B98;
+  color: #983b3b;
+  border-bottom-color: #983b3b;
 }
 
 /*

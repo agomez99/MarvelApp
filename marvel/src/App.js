@@ -7,7 +7,7 @@ import { Error } from './components/Error';
 import { Loading } from './components/Loading';
 import { LoadMore } from './components/LoadMore';
 import { MarvelService } from './services/MarvelService';
-
+import {Title} from './components/Title';
 class App extends Component {
   // --------------------------------------------------
   // SETUP
@@ -72,6 +72,8 @@ class App extends Component {
 
     return (
       <section className="app">
+
+        <Title />
         <SearchBar
           searchTerm={ this.state.searchTerm }
           searchType={ this.state.searchType }
