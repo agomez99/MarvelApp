@@ -10,7 +10,7 @@ export class ResultsList extends Component {
           <ResultCard
             key={ result.id }
             image={ result.thumbnail.path + '.' + result.thumbnail.extension }
-            name={ result.name }
+            //title={ result.name }
             title={result.title}
             onClick={ () => this.props.onResultClick(result.id) }
             

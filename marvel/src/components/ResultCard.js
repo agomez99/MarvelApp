@@ -9,6 +9,7 @@ export class ResultCard extends Component {
         </figure>
         <div className="result-card__info">
           <h2>{ this.props.title }</h2>
+          <h2>{this.props.name}</h2>
         </div>
       </button>
     );

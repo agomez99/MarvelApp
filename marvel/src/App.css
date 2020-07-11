@@ -144,10 +144,10 @@
 
 .result-card__info {
   padding: 2rem;
+  padding-top: 5rem;
   flex-grow: 1;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .result-card__info > *:first-child {
@@ -224,7 +224,7 @@
   flex-direction: column;
   width: 90%;
   max-width: 60rem;
-  max-height: 80vh;
+  max-height: 100vh;
   margin: 0 auto 24vh;
   position: relative;
 }
