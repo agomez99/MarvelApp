@@ -1,9 +1,10 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
+import { SearchTypeControls } from "./SearchTypeControls";
 
 export class SearchBar extends Component {
   constructor(props) {
     super(props);
-    
+
     this.state = {
       searchTerm: props.searchTerm,
     };
@@ -13,15 +14,22 @@ export class SearchBar extends Component {
 
   render() {
     return (
-      <form className="search-bar" onSubmit={ this.handleSubmit }>
+      <form className="search-bar" onSubmit={this.handleSubmit}>
         <input
           className="search-bar__field"
           type="text"
-          value={ this.state.searchTerm }
+          value={this.state.searchTerm}
           placeholder="Heroes search (eg. Spider-Man)"
-          onChange={ (e) => this.setState({ searchTerm: e.target.value })}
+          onChange={(e) => this.setState({ searchTerm: e.target.value })}
         />
-        <button className="search-bar__submit" type="submit">Search</button>
+        <SearchTypeControls
+          searchType={this.props.searchType}
+          onCharactersClick={ () =>this.props.onSelect("Characters")}
+          onComicsClick={ () => this.props.onSelect("Comics")}
+        />
+        <button className="search-bar__submit" type="submit">
+          Search
+        </button>
       </form>
     );
   }
