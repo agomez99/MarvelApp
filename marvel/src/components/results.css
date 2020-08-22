@@ -1,0 +1,22 @@
+.result-details__info__body{
+     width:800px;
+     height:900px;
+     background-color: rgb(54, 54, 54);
+    color:rgb(12, 12, 12);
+
+}
+.result-details__info{
+
+}
+.result-details__backdrop{
+    height:100%;
+}
+.result-details__info__body__content{
+    height:100%;
+    display:block;
+    overflow: visible;
+}
+.result-details__info img {
+    width:100%;
+    padding:5px;
+}
