@@ -256,12 +256,11 @@
 
 .result-details__info__header figure {
   width: 25rem;
-  height: 25rem;
+  height: 30rem;
   position: absolute;
   left: 50%;
   top: 100%;
   transform: translate(-50%, -50%);
-  border-radius: 50%;
   overflow: hidden;
   margin: 0;
   background: #fafafa;

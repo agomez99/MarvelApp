@@ -14,6 +14,8 @@ export class ResultDetails extends Component {
           <div className="result-details__info__body">
             <div className="result-details__info__body__content">
               <h1>{ this.props.title }</h1>
+              <h1>{ this.props.name }</h1>
+
               <p><strong>Appears In: { this.props.stories.available || 0 } stories</strong></p>
               <p>{ this.props.description }</p>
               <p><strong>Links:</strong></p>
