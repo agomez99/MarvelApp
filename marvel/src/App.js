@@ -70,6 +70,9 @@ class App extends Component {
       )
       : '';
 
+      const feature = "https://gateway.marvel.com:443/v1/public/characters/1009718?apikey=228a2cac6d893dce20244bdab584d41a"
+      console.log(feature)
+
     return (
       <section className="app">
 
@@ -80,6 +83,7 @@ class App extends Component {
           onSubmit={ (searchTerm) => this.setState({ searchTerm }) }
           onSelect={ (searchType) => this.setState({ searchType }) }
         />
+        
         { resultsElem }
         { loadMoreElem }
         { detailsElem }

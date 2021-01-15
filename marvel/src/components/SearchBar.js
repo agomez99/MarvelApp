@@ -17,7 +17,7 @@ export class SearchBar extends Component {
       <form className="search-bar" onSubmit={this.handleSubmit}>
         <input
           className="search-bar__field"
-          type="text"
+          type="search"
           value={this.state.searchTerm}
           placeholder="Heroes search (eg. Spider-Man)"
           onChange={(e) => this.setState({ searchTerm: e.target.value })}
