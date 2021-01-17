@@ -3,17 +3,33 @@
 // APP STYLES
 // --------------------------------------------------
 */
+body{
+  padding:0px;
+}
 .app {
-  max-width: 90rem;
   margin: 0 auto;
 }
+.nav{
+  background-color: rgb(255, 17, 17);
+  height:70px;
+  padding-top:10px;
+}
+.nav li{
+  display:inline;
+  color:white;
+}
+.nav a{
+  display:inline-block;
+  padding:10px;
+  color:white;
 
-
+}
 .header{
   display:block;
   margin-left:auto;
   margin-right: auto;
-  margin-bottom: 10%;
+  margin-bottom:2%;
+
   width:100%;
 }
 /*
@@ -22,10 +38,13 @@
 // --------------------------------------------------
 */
 .search-bar {
-  width: 100%;
+  width: 60%;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 3rem;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 40px;
   box-shadow: 0 1rem 2rem -0.3rem rgba(0, 0, 0, 0.5);
 }
 
@@ -44,7 +63,7 @@
   font-weight: 600;
   padding: 2rem 2.5rem;
   color: #fff;
-  background: #983b3b;
+  background:  #ed1d24;
 }
 
 @media (min-width: 768px) {
@@ -84,8 +103,8 @@
 }
 
 .search-type-controls input[type="radio"]:checked + span {
-  color: #983b3b;
-  border-bottom-color: #983b3b;
+  color:  #ed1d24;
+  border-bottom-color:  #ed1d24;
 }
 
 /*
@@ -229,6 +248,8 @@
   max-height: 100vh;
   margin: 0 auto 24vh;
   position: relative;
+  text-overflow: none;
+
 }
 
 .result-details__info__header {

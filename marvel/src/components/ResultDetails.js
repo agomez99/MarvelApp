@@ -4,20 +4,19 @@ export class ResultDetails extends Component {
   render() {
     return (
       <article className="result-details">
-        <div className="result-details__backdrop"></div>
         <div className="result-details__info">
          
           <div className="result-details__info__body">
-            <div className="result-details__info__body__content" style={{height:"9600px"}}>
+            <div className="result-details__info__body__content">
 
-              <div className="container">
-                <div className="row">
-                  <div className="col-sm">
+              <div className="container" >
+                <div className="row"  >
+                  <div className="col-sm" style={{height:"100%"}}>
                   <img src={ this.props.image } alt={ this.props.title } className="imgpro"/>
                 {/* <h1>{ this.props.title }</h1>
                   <h1>{ this.props.name }</h1> */}                  
                   </div>
-                  <div className="col-sm">
+                  <div className="col-sm" >
                   <p><strong>Appears In: { this.props.stories.available || 0 } stories</strong></p>
               <p>{ this.props.description }</p>
               <p><strong>Links:</strong></p>

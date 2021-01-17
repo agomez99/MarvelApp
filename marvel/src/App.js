@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import {Navbar} from './components/Navbar';
 import { ResultsList } from './components/ResultsList';
 import { ResultDetails } from './components/ResultDetails';
 import { SearchBar } from './components/SearchBar';
@@ -8,6 +9,8 @@ import { Loading } from './components/Loading';
 import { LoadMore } from './components/LoadMore';
 import { MarvelService } from './services/MarvelService';
 import {Title} from './components/Title';
+import { Nav } from 'react-bootstrap';
+
 class App extends Component {
   // --------------------------------------------------
   // SETUP
@@ -75,15 +78,33 @@ class App extends Component {
 
     return (
       <section className="app">
-
-        <Title />
-        <SearchBar
+<Nav
+  activeKey="/home"
+  onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
+  className="nav"
+>
+  <Nav.Item>
+    <Nav.Link href="/home">Active</Nav.Link>
+  </Nav.Item>
+  <Nav.Item>
+    <Nav.Link eventKey="link-1">Link</Nav.Link>
+  </Nav.Item>
+  <Nav.Item>
+    <Nav.Link eventKey="link-2">Link</Nav.Link>
+  </Nav.Item>
+  <Nav.Item>
+    <Nav.Link eventKey="disabled" disabled>
+      Disabled
+    </Nav.Link>
+  </Nav.Item>
+</Nav>       
+<Title />
+ <SearchBar
           searchTerm={ this.state.searchTerm }
           searchType={ this.state.searchType }
           onSubmit={ (searchTerm) => this.setState({ searchTerm }) }
           onSelect={ (searchType) => this.setState({ searchType }) }
         />
-        
         { resultsElem }
         { loadMoreElem }
         { detailsElem }

@@ -1,6 +1,6 @@
 .result-details__info__body{
      width:800px;
-     height:900px;
+     height:1200px;
      background-color: rgb(54, 54, 54);
     color:rgb(12, 12, 12);
 
@@ -13,8 +13,9 @@
 }
 .result-details__info__body__content{
     height:100%;
-    display:block;
+    display:flex;
     overflow: visible;
+    max-height: 120%;
 }
 .result-details__info img {
     width:100%;

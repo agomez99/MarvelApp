@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Logo from './MarvelLogo.jpg'
+import Logo from './marvelong.png'
 import '../App.css';
 
 export class Title extends Component {
