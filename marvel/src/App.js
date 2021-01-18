@@ -9,7 +9,7 @@ import { Loading } from './components/Loading';
 import { LoadMore } from './components/LoadMore';
 import { MarvelService } from './services/MarvelService';
 import {Title} from './components/Title';
-import { Nav } from 'react-bootstrap';
+import { Nav, Container, Row, Col } from 'react-bootstrap';
 
 class App extends Component {
   // --------------------------------------------------
@@ -105,9 +105,18 @@ class App extends Component {
           onSubmit={ (searchTerm) => this.setState({ searchTerm }) }
           onSelect={ (searchType) => this.setState({ searchType }) }
         />
+
+<Container fluid="xl">
+  <Row>
+    <Col>
         { resultsElem }
         { loadMoreElem }
         { detailsElem }
+        </Col>
+  </Row>
+</Container>
+
+
       </section>
     );
   }

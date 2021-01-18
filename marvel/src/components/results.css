@@ -21,3 +21,14 @@
     width:100%;
     padding:5px;
 }
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(ComicBook.otf);
+  }
+  
+
+.description{
+    font-family: myFirstFont;
+    font-size:1.5vh;
+    }   

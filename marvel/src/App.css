@@ -32,6 +32,15 @@ body{
 
   width:100%;
 }
+@font-face {
+  font-family: myFirstFont;
+  src: url(ComicBook.otf);
+}
+
+.name{
+font-family: myFirstFont;
+font-size:1.5vh;
+}
 /*
 // --------------------------------------------------
 // SearchBar STYLES
@@ -117,6 +126,7 @@ body{
   flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
+  
 }
 
 /*
@@ -129,10 +139,11 @@ body{
   display: flex;
   flex-direction: column;
   align-items: inherit;
-  background: #efefef;
+  background: #EC1D24;
   box-shadow: 0 1rem 2rem -0.3rem rgba(0, 0, 0, 0.5);
   margin-right: 4%;
   margin-bottom: 4%;
+  color: white;
 }
 
 .result-card:nth-child(2n) {
@@ -169,6 +180,7 @@ body{
   justify-content: center;
   padding-top: 2rem;
   padding-bottom: 0;
+
 }
 
 .result-card__info > *:first-child {
